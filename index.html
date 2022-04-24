@@ -4,52 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>CV_Ostrishko_Viktoriia</title>
 </head>
 <body>
     <!-- Main -->
     <div class="wrapper">
-        <!-- Sidebar -->
-        <aside>
-            <img src="./img/Фото.png" alt="User photo" width="250">
-            <!-- contacts -->
-            <div>
-                <p>
-                    Tel.: <a href="tel:+380980098080">+380980098080</a></p>
-                <p>
-                    E-mail: <a href="mailto:viktoriia.motsna@gmail.com"> viktoriia.motsna@gmail.com</a>
-                </p>
-            </div>
-            <!-- tech skills -->
-            <div>
-                <h3>Tech skills</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Git /GitHub</li>
-                    <li>Visual Studio Code</li>
-                    <li>Photoshop CS5</li>
-                    <li>Figma</li>
-                </ul>
-                
-            </div>
-        <!-- soft skills -->
-        <div>
-            <h3>Soft skills</h3>
-            <ul>
-                <li>Motivated</li>
-                <li>Responsible</li>
-                <li>Purposeful</li>
-                <li>I study easily</li>
-            </ul>
-                        
-        </div>
-        </aside>
-        <!-- main content -->
-        <div>
+    <!-- main content -->
+        <div class="main-content">
             <!-- about user -->
             <div>
                 <h1>Viktoriia Ostrishko</h1>
@@ -60,7 +25,7 @@
 
             <!-- projects -->
             <div>
-                <h3>Projects</h3>
+                 <h3 class="section-title">Projects</h3>
                 <ol>
                     <li>
                         <a href="https://interface-developer.netlify.app/">My first Landing Page..[ HTML5, CSS3, JavaScript ]</a>
@@ -69,50 +34,132 @@
                     <li>
                         <a href="https://github.com/ToryOstr">My repositories on GitHub</a>
                     </li>
+                    <li>
+                        Web page "resume"
+                    </li>
             
                 </ol>
                 <!-- works -->
                 <div>
-                    <h3>Work Experience</h3>
-                        <!-- company1 -->
+                    <h3 class="section-title">Work Experience</h3>
+                   <!-- company1 -->
                         <div>
                             <h4>Online marathon "Test-Drive", GoIT.</h4>
                             <h5>October 2021 year</h5>
                             <p>Basics HTML, CSS </p>
                             <p>Introduction to JavaScript</p>
                         </div>
-                    
                         <!-- company2 -->
-                        <div>
+                        <div class="content-sharing">
                             <h4>Online course "JavaScript Demo 2", GoIT.</h4>
                             <h5>April 2022 year</h5>
                             <p>Learning js on a demonstration course from GoIT. 
                             Analysis of the basics of programming language 
                             and problem solving in online lessons with 
-                            course mentors.</p>
-                           
+                            course mentors.</p>                            
                         </div>
-                        <!-- Self development -->
-                        <div>
-                            <h4>Self development</h4>
-                            <h5>October 2021 year - up to </h5>
-                            <p>Independent deepening of knowledge in the field of HTML, CSS and JavaScript
-                            </p>
-                        </div>
+                        <!-- company3 -->
+                        <div class="content-sharing">
+                            <h4>Online marathon GoIT.</h4>
+                            <h5>April 2022 year</h5>
+                            <p>Basics HTML, CSS </p>
+                            <p>Development of a web page "Resume"</p>
+                        </div>                                      
                 </div>
-
+               
                 <!-- education -->
                 <div>
-                    <h3>Education</h3>
-                    <h4><abbr title="State Vocational and Technical Educational Institution">SVaTEI</abbr> "Romensky Higher Vocational School"</h4>
-                    <h5>2008 - 2011 year</h5>
-                   <p>State Vocational and Technical Educational Institution "Romensky Higher Vocational School" </p>
-                   <p>Cook. Confectioner.</p>
+                    <h3 class="section-title">Education</h3>
+                        <h4>State Vocational and Technical Educational Institution "Romensky Higher Vocational School"</h4>
+                        <p>Cook. Confectioner.</p>
+                        <h5>2008 - 2011 year</h5> 
                 </div>
+                <!-- Self development -->
+                <div class="content-sharing">
+                    <h4>Self development</h4>
+                    <h5>October 2021 year - up to now</h5>
+                    <p>Independent deepening of knowledge in the field of HTML, CSS and JavaScript
+                    </p>
+                </div>
+                <!-- About myself -->
+                <div>
+                    <h3 class="section-title">About myself</h3>
+                    <p>I am a responsible person. I can work in a team. I organize my time well to improve efficiency.</p>
+                </div>
+                <!-- Target -->
+                <div >
+                    <h3 class="section-title">Target</h3>
+                    <p">Take the position of Trainee Front-End developer to expand theoretical knowledge and gain practical skills in a
+                    commercial project. </p>
+                    <p>I have basic knowledge of HTML and CSS. As part of the training course she received theoretical and practical knowledge
+                    on creating a Landing page at a basic level.</p>
+                    <p>I am learning JavaScript on my own - I continue to gain theoretical knowledge during online lectures and master classes
+                    for entry-level specialists, I consolidate the acquired knowledge by performing practical tasks.
+                    No commercial experience.</p>
+                </div>
+
             </div>
         </div>
 
-       
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <img src="./img/Фото.png" alt="User photo" width="300">
+        <!-- contacts -->
+        <div>
+            <h3>Contacts</h3>
+            <p>
+                Tel.: <a href="tel:+380980098080">+380980098080</a>
+            </p>
+            <p>
+                E-mail: <a href="mailto:viktoriia.motsna@gmail.com"> viktoriia.motsna@gmail.com</a>
+            </p>
+            <p>
+                LinkedIn: <a href="https://www.linkedin.com/in/viktoriia-ostrishko/">Viktoriia Ostrishko</a>
+            </p>
+        </div>
+        <!-- Language -->
+        <div>
+            <h3>Language</h3>
+            <ul>
+                <li>Українська [★★★★★]</li>
+                <li>Російська [★★★★★]</li>
+                <li>Англійська [★★☆☆☆]</li>
+                <li>Польська [★★★☆☆]</li>
+            </ul>
+        </div>
+        <!-- tech skills -->
+        <div>
+            <h3>Tech skills</h3>
+            <ul>
+                <li>HTML5 [★★☆☆☆]</li>
+                <li>CSS3 [★★☆☆☆]</li>
+                <li>JavaScript [★☆☆☆☆]</li>
+                <li>Git /GitHub [★★★☆☆]</li>
+                <li>Visual Studio Code [★★★☆☆]</li>
+                <li>Photoshop CS5 [★★★☆☆]</li>
+                <li>Figma [★★☆☆☆]</li>
+            </ul>
+
+        </div>
+        <!-- soft skills -->
+        <div>
+            <h3>Soft skills</h3>
+            <ul>
+                <li>Motivated</li>
+                <li>Responsible</li>
+                <li>Purposeful</li>
+                <li>I study easily</li>
+            </ul>
+        </div>
+        <!-- Hobby -->
+        <div>
+            <h3>Hobby</h3>
+            <ul>
+                <li>Needlework</li>
+            </ul>
+        </div>
+    </aside>
+        
     </div>
 </body>
 </html>
