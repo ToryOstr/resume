@@ -8,7 +8,6 @@ body {
   display: flex;
   flex-direction: row-reverse;
   width: 1000px;
-  left: auto;
   margin: 40px auto;
   background-color: rgb(255, 255, 255);
   box-shadow: 8px 8px 12px rgba(24, 16, 16, 0.25);
@@ -16,11 +15,18 @@ body {
 }
 
 .main-content {
-  padding: 10px;
+  padding: 20px;
   border-top: 1px solid rgb(75, 70, 42);
   border-right: 1px solid rgb(74, 69, 42) ;
   border-bottom: 1px solid rgb(74, 69, 42) ;
 }
+
+ul {
+  margin: 16px 0  0;
+}
+/* h1, h2, h3, h4, h5, p {
+  margin: 0 ;
+} */
 
 h1 {
   font-size: 36px;
@@ -60,11 +66,15 @@ text-indent: 5px;
 
 .sidebar {
   padding: 20px 15px;
+  width: 350px;
   background-color: rgb(196, 189, 151);
   color: rgb(74, 69, 42);
   border: 1px solid rgb(74, 69, 42) ;
 }
 
+.photo {
+  width: 300px;
+}
 .sidebar h3 {
   background-color: rgb(74, 69, 42) ;
   color: rgb(255, 255, 255);
