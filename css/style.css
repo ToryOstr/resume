@@ -21,28 +21,29 @@ body {
   border-bottom: 1px solid rgb(74, 69, 42) ;
 }
 
-ul {
-  margin: 16px 0  0;
+ol {
+  margin: 10px 0 20px;
 }
-/* h1, h2, h3, h4, h5, p {
-  margin: 0 ;
-} */
 
 h1 {
   font-size: 36px;
   color: rgb(196, 189, 151);
+  margin: 15px 0 0;
 }
 
  h2 {
   font-size: 24px;
   color: rgb(74, 69, 42);
+  margin: 15px 0 0;
 }
 
  h4 {
+   margin: 10px 0;
   color: rgb(74, 69, 42);
 }
 
 h5 {
+   margin: 10px 0;
   color: rgb(196, 189, 151);
 }
 
@@ -52,16 +53,17 @@ h5 {
 }
 
 p {
-text-indent: 5px;
+  margin:5px;
+  text-indent: 5px;
 }
 
 .section-title {
-  padding: 5px;
   border-top: 1px solid rgb(74, 69, 42) ;
   border-bottom: 1px solid rgb(74, 69, 42) ;
   color: rgb(196, 189, 151);
-  padding: 0 auto 25px 0 ;
-  
+  padding: 5px auto 25px 0 ;
+  margin: 16px 0 0;
+  padding: 5px ;
 }
 
 .sidebar {
@@ -73,18 +75,27 @@ text-indent: 5px;
 }
 
 .photo {
-  width: 300px;
+  width: 350px;
 }
 .sidebar h3 {
   background-color: rgb(74, 69, 42) ;
   color: rgb(255, 255, 255);
   padding: 5px 10px;
+  margin: 20px 0 0 ;
   /* border-top: 1px solid #4A452A ;
   border-bottom: 1px solid #4A452A ; */
 }
+ul {
+  margin: 0;
+}
+
+li {
+ margin: 5px 0;
+}
+
 a {
-    color: rgb(74, 69, 42);
-    text-decoration: none;
+  color: rgb(74, 69, 42);
+  text-decoration: none;
 }
 
 
