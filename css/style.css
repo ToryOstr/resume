@@ -15,56 +15,80 @@ body {
 }
 
 .main-content {
-  padding: 20px;
+  padding: 40px;
   border-top: 1px solid rgb(75, 70, 42);
   border-right: 1px solid rgb(74, 69, 42) ;
   border-bottom: 1px solid rgb(74, 69, 42) ;
 }
 
-ol {
-  list-style: auto;
-  margin: 10px 25px 20px;
-}
-
 h1 {
   font-size: 36px;
+  font-weight: bold;
   color: rgb(196, 189, 151);
-  margin: 15px 0 0;
+  margin: 0;
 }
 
- h2 {
-  font-size: 24px;
+ .position {
+  font-size: 20px;
+  font-weight: bold;
   color: rgb(74, 69, 42);
-  margin: 15px 0 0;
+  margin: 15px 0;
 }
 
- h4 {
-   margin: 10px 0;
+.address ,
+.date-of-birth {
+   margin: 0 0 5px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 1px solid rgb(74, 69, 42) ;
+  border-bottom: 1px solid rgb(74, 69, 42) ;
+  color: rgb(196, 189, 151);
+  padding: 5px;
+  margin: 15px 0 0;
+
+}
+
+.list-item {
+ list-style: auto;
+ margin: 10px 25px 20px;
+ font-weight: bold;
+
+}
+li {
+  margin: 5px 0;
+}
+.project-list {
+  font-weight: normal; 
   color: rgb(74, 69, 42);
 }
 
-h5 {
-   margin: 10px 0;
+.project-list-links {
+  color: rgb(74, 69, 42);
+  text-decoration: none;
+}
+.company-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(74, 69, 42);
+  margin: 10px 0;
+}
+
+
+.company-year {
+  margin: 10px 5px;
   color: rgb(196, 189, 151);
 }
 
 .content-sharing {
-  border-top: 1px dotted rgb(196, 189, 151);
-   
+  border-top: 2px dotted rgb(74, 69, 42);
 }
 
-p {
-  margin:5px;
+.text-content {
+  margin: 10px 5px;
   text-indent: 5px;
-}
-
-.section-title {
-  border-top: 1px solid rgb(74, 69, 42) ;
-  border-bottom: 1px solid rgb(74, 69, 42) ;
-  color: rgb(196, 189, 151);
-  padding: 5px auto 25px 0 ;
-  margin: 16px 0 0;
-  padding: 5px ;
 }
 
 .sidebar {
@@ -78,34 +102,43 @@ p {
 .user-photo {
   width: 350px;
 }
-.sidebar h3 {
+.sidebar-title {
+  font-size: 18px;
+  font-weight: normal;
   background-color: rgb(74, 69, 42) ;
   color: rgb(255, 255, 255);
   padding: 5px 10px;
-  margin: 20px 0 0 ;
+  margin: 10px 0 5px;
  
 }
-
-ul {
-
-  margin: 0 25px;
-  list-style: disc;
- 
-}
-
-b {
-  text-align: right;
-}
-
-li {
- margin: 5px 0;
- color: rgb(74, 69, 42);
-
-}
-
-a {
+.contacts-link {
   color: rgb(74, 69, 42);
   text-decoration: none;
 }
+
+.sidebar-list {
+  margin: 0 25px;
+  list-style: disc;
+ }
+ .sidebar-list-item {
+   color: #fff;
+   margin: 5px 0;
+ }
+ .dots {
+   color: rgb(196, 189, 151);
+ }
+
+.sidebar-li-text {
+ 
+ margin: 5px 5px;
+ color: rgb(74, 69, 42);
+
+}
+.sidebar-li-text-circle {
+ width: 50px;
+ color: rgb(74, 69, 42);
+ }
+
+
 
 
