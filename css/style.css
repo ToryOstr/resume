@@ -122,18 +122,19 @@ h1 {
    color: #fff;
    margin: 5px 0;
  }
+
  .dots {
    color: rgb(196, 189, 151);
  }
 
 .sidebar-li-text {
- 
- margin: 5px 5px;
- color: rgb(74, 69, 42);
-
+display: inline-block;
+width: 240px;
+margin: 0px 5px;
+color: rgb(74, 69, 42);
 }
 .sidebar-li-text-circle {
- width: 50px;
+ 
  color: rgb(74, 69, 42);
  }
 
