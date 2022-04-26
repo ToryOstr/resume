@@ -55,11 +55,9 @@ h1 {
  list-style: auto;
  margin: 10px 25px 20px;
  font-weight: bold;
+ 
+}
 
-}
-li {
-  margin: 5px 0;
-}
 .project-list {
   font-weight: normal; 
   color: rgb(74, 69, 42);
