@@ -59,6 +59,13 @@ h1 {
 }
 
 .project-list {
+  display: inline-block;
+  width: 215px;
+  font-weight: normal; 
+  color: rgb(74, 69, 42);
+
+}
+.project-list-tech {
   font-weight: normal; 
   color: rgb(74, 69, 42);
 }
@@ -121,6 +128,13 @@ h1 {
  .sidebar-list-item {
    color: #fff;
    margin: 5px 0;
+ }
+
+ .sidebar-contacts-list-item {
+  display: inline-block;
+  width: 65px;
+  color: #fff;
+  margin: 0px 5px 0 0;
  }
 
  .dots {
