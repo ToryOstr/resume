@@ -1,157 +1,162 @@
+:root {
+  --border: 1px solid #4a452a;
+  --accent-dark-color: #4a452a;
+  --accent-light-color: #c4bd97;
+  --white-accent: #ffffff;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(250, 250, 250);
+  background-color: #fafafa;
+  font-weight: 400;
   
 }
 
 .wrapper {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   width: 1000px;
   margin: 40px auto;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white-accent);
   box-shadow: 8px 8px 12px rgba(24, 16, 16, 0.25);
   
 }
 
 .main-content {
   padding: 40px;
-  border-top: 1px solid rgb(75, 70, 42);
-  border-right: 1px solid rgb(74, 69, 42) ;
-  border-bottom: 1px solid rgb(74, 69, 42) ;
-}
-
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  color: rgb(196, 189, 151);
-  margin: 0;
-}
-
- .position {
-  font-size: 20px;
-  font-weight: bold;
-  color: rgb(74, 69, 42);
-  margin: 15px 0;
-}
-
-.address ,
-.date-of-birth {
-   margin: 0 0 5px;
-}
-
-.section-title {
-  font-size: 18px;
-  font-weight: bold;
-  border-top: 1px solid rgb(74, 69, 42) ;
-  border-bottom: 1px solid rgb(74, 69, 42) ;
-  color: rgb(196, 189, 151);
-  padding: 5px;
-  margin: 15px 0 0;
-
-}
-
-.list-item {
- list-style: auto;
- margin: 10px 25px 20px;
- font-weight: bold;
- 
-}
-
-.project-list {
-  display: inline-block;
-  width: 215px;
-  font-weight: normal; 
-  color: rgb(74, 69, 42);
-
-}
-.project-list-tech {
-  font-weight: normal; 
-  color: rgb(74, 69, 42);
-}
-
-.project-list-links {
-  color: rgb(74, 69, 42);
-  text-decoration: none;
-}
-.company-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: rgb(74, 69, 42);
-  margin: 10px 0;
-}
-
-
-.company-year {
-  margin: 10px 5px;
-  color: rgb(196, 189, 151);
-}
-
-.content-sharing {
-  border-top: 2px dotted rgb(74, 69, 42);
-}
-
-.text-content {
-  margin: 10px 5px;
-  text-indent: 5px;
+  border-top: var(--border);
+  border-right: var(--border);
+  border-bottom: var(--border);
 }
 
 .sidebar {
   padding: 20px 15px;
   width: 350px;
-  background-color: rgb(196, 189, 151);
-  color: rgb(74, 69, 42);
-  border: 1px solid rgb(74, 69, 42) ;
+  background-color: var(--accent-light-color);
+  color: var(--accent-dark-color);
+  border: var(--border);
 }
 
 .user-photo {
   width: 350px;
 }
 .sidebar-title {
-  font-size: 18px;
-  font-weight: normal;
-  background-color: rgb(74, 69, 42) ;
-  color: rgb(255, 255, 255);
   padding: 5px 10px;
   margin: 10px 0 5px;
- 
+  font-size: 18px;
+  background-color: var(--accent-dark-color) ;
+  color: var(--white-accent);
 }
+
 .contacts-link {
-  color: rgb(74, 69, 42);
-  text-decoration: none;
+  color: var(--accent-dark-color);
+}
+.contacts-list {
+  margin: 5px 0;
 }
 
 .sidebar-list {
   margin: 0 25px;
   list-style: disc;
- }
- .sidebar-list-item {
-   color: #fff;
-   margin: 5px 0;
- }
+}
 
- .sidebar-contacts-list-item {
+.sidebar-list-item {
+  color: var(--white-accent);
+  margin: 5px 0;
+}
+
+.sidebar-contacts-list-item {
   display: inline-block;
-  width: 65px;
-  color: #fff;
+  width: 16px;
   margin: 0px 5px 0 0;
- }
-
- .dots {
-   color: rgb(196, 189, 151);
- }
+}
 
 .sidebar-li-text {
-display: inline-block;
-width: 240px;
-margin: 0px 5px;
-color: rgb(74, 69, 42);
+  display: inline-block;
+  width: 240px;
+  margin: 0px 5px;
+  color: var(--accent-dark-color);
 }
 .sidebar-li-text-circle {
- 
- color: rgb(74, 69, 42);
- }
+  height: 19px;
+  color: var(--accent-dark-color);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--accent-light-color);
+  margin: 0;
+}
+
+.position {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-dark-color);
+  margin: 15px 0;
+}
+
+.address ,
+.date-of-birth {
+  margin: 0 0 5px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  border-top: var(--border) ;
+  border-bottom: var(--border) ;
+  color: var(--accent-light-color);
+  padding: 5px;
+  margin: 15px 0 0;
+
+}
+
+.list-item {
+  list-style: auto;
+  margin: 10px 25px 20px;
+
+}
+
+.project-list {
+  display: inline-block;
+  width: 215px;
+  color: var(--accent-dark-color);
+
+}
+.project-list-tech {
+  color: var(--accent-dark-color);
+}
+
+.project-list-links {
+  color: var(--accent-dark-color);
+
+}
+
+.company-title {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-dark-color);
+}
 
 
+.company-year {
+  margin: 10px 5px;
+  color: var(--accent-light-color);
+}
+
+.content-sharing {
+  border-top: 2px dotted rgb(74, 69, 42);
+}
+
+.dots {
+  color: var(--accent-light-color);
+}
+
+.text-content {
+  margin: 10px 5px;
+  text-indent: 5px;
+}
 
 
