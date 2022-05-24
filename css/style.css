@@ -53,7 +53,7 @@ body {
   color: var(--accent-dark-color);
 }
 .contacts-list {
-  margin: 5px 0;
+  margin: 5px;
 }
 
 .sidebar-list {
@@ -127,6 +127,12 @@ h1 {
 }
 .project-list-tech {
   color: var(--accent-dark-color);
+}
+
+.project-tech {
+  margin: 5px 15px;
+  list-style-type: disc;
+  color: var(--accent-dark-color)
 }
 
 .project-list-links {
