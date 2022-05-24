@@ -119,12 +119,6 @@ h1 {
 
 }
 
-.project-list {
-  display: inline-block;
-  width: 215px;
-  color: var(--accent-dark-color);
-
-}
 .project-list-tech {
   color: var(--accent-dark-color);
 }
@@ -134,7 +128,9 @@ h1 {
   list-style-type: disc;
   color: var(--accent-dark-color)
 }
-
+.tech-list {
+  margin: 5px 0;
+}
 .project-list-links {
   color: var(--accent-dark-color);
 
