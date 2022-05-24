@@ -2,6 +2,7 @@
   --border: 1px solid #4a452a;
   --accent-dark-color: #4a452a;
   --accent-light-color: #c4bd97;
+  --content-sharing: 2px dotted rgb(74, 69, 42);
   --white-accent: #ffffff;
 }
 
@@ -147,7 +148,7 @@ h1 {
 }
 
 .content-sharing {
-  border-top: 2px dotted rgb(74, 69, 42);
+  border-top: var(--content-sharing);
 }
 
 .dots {
