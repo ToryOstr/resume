@@ -107,14 +107,14 @@ h1 {
   font-weight: 700;
   border-top: var(--border) ;
   border-bottom: var(--border) ;
-  color: var(--accent-light-color);
-  padding: 5px;
+  color: var(--accent-dark-color);
+  padding: 5px 0;
   margin: 15px 0 0;
 
 }
 
 .list-item {
-  list-style: auto;
+  list-style-type: decimal;
   margin: 10px 25px 20px;
 
 }
@@ -138,12 +138,12 @@ h1 {
   margin: 10px 0;
   font-size: 18px;
   font-weight: 700;
-  color: var(--accent-dark-color);
+  color: var(--accent-light-color);
 }
 
 
 .company-year {
-  margin: 10px 5px;
+  margin: 10px 0;
   color: var(--accent-light-color);
 }
 
@@ -156,8 +156,7 @@ h1 {
 }
 
 .text-content {
-  margin: 10px 5px;
-  text-indent: 5px;
+  margin: 10px 0;
 }
 
 
