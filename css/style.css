@@ -10,7 +10,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fafafa;
   font-weight: 400;
-  
 }
 
 .wrapper {
@@ -20,10 +19,10 @@ body {
   margin: 40px auto;
   background-color: var(--white-accent);
   box-shadow: 8px 8px 12px rgba(24, 16, 16, 0.25);
-  
 }
 
 .main-content {
+  width: 65%;
   padding: 40px;
   border-top: var(--border);
   border-right: var(--border);
@@ -31,25 +30,28 @@ body {
 }
 
 .sidebar {
+  width: 35%;
   padding: 20px 15px;
-  width: 350px;
+  border: var(--border);
   background-color: var(--accent-light-color);
   color: var(--accent-dark-color);
-  border: var(--border);
 }
 
 .user-photo {
-  width: 350px;
+  width: 100%;
+  height: auto;
 }
 .sidebar-title {
-  padding: 5px 10px;
   margin: 10px 0 5px;
+  padding: 5px 10px;
   font-size: 18px;
-  background-color: var(--accent-dark-color) ;
+  background-color: var(--accent-dark-color);
+  border-radius: 5px;
   color: var(--white-accent);
 }
 
 .contacts-link {
+  font-size: 16px;
   color: var(--accent-dark-color);
 }
 .contacts-list {
@@ -59,6 +61,7 @@ body {
 .sidebar-list {
   margin: 0 25px;
   list-style: disc;
+  height: auto;
 }
 
 .sidebar-list-item {
@@ -74,12 +77,12 @@ body {
 
 .sidebar-li-text {
   display: inline-block;
-  width: 240px;
+  width: 70%;
+  font-size: 16px;
   margin: 0px 5px;
   color: var(--accent-dark-color);
 }
 .sidebar-li-text-circle {
-  height: 19px;
   color: var(--accent-dark-color);
 }
 
@@ -97,7 +100,7 @@ h1 {
   margin: 15px 0;
 }
 
-.address ,
+.address,
 .date-of-birth {
   margin: 0 0 5px;
 }
@@ -105,44 +108,53 @@ h1 {
 .section-title {
   font-size: 18px;
   font-weight: 700;
-  border-top: var(--border) ;
-  border-bottom: var(--border) ;
+  border-top: var(--border);
+  border-bottom: var(--border);
   color: var(--accent-dark-color);
   padding: 5px 0;
   margin: 15px 0 0;
-
 }
 
 .list-item {
   list-style-type: decimal;
   margin: 10px 25px 20px;
-
-}
-
-.project-list-tech {
-  color: var(--accent-dark-color);
 }
 
 .project-tech {
+  height: 1px;
+  overflow: hidden;
   margin: 5px 15px;
   list-style-type: disc;
-  color: var(--accent-dark-color)
+  color: var(--accent-dark-color);
 }
 .tech-list {
   margin: 5px 0;
 }
 .project-list-links {
   color: var(--accent-dark-color);
+}
+.arrow {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-right: 30%;
 
+  border-top: 16px solid #4a452a;
+  border-bottom: none;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  transition: 0.3s;
 }
 
+.arrow-rotate {
+  rotate: 180deg;
+}
 .company-title {
   margin: 10px 0;
   font-size: 18px;
   font-weight: 700;
   color: var(--accent-light-color);
 }
-
 
 .company-year {
   margin: 10px 0;
@@ -161,4 +173,105 @@ h1 {
   margin: 10px 0;
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-content {
+    padding: 20px 10px;
+    width: 60%;
+  }
+  .sidebar {
+    width: 40%;
+    padding: 10px;
+  }
+  .sidebar-title {
+    margin: 5px 0 0;
+    padding: 5px;
+  }
+  .contacts-list {
+    margin: 0 5px;
+  }
+  .contacts-list,
+  .sidebar-list {
+    height: 1px;
+    overflow: hidden;
+  }
 
+  .contacts-link {
+    font-size: 14px;
+  }
+  .sidebar-list {
+    margin: 0 0 0 25px;
+  }
+
+  .sidebar-contacts-list-item {
+    width: 14px;
+  }
+
+  .sidebar-li-text {
+    width: 66%;
+    font-size: 14px;
+    margin: 0;
+  }
+
+
+  h1 {
+    font-size: 28px;
+  }
+  .position {
+    margin: 10px 0;
+  }
+  .company-title {
+    font-size: 16px;
+  }
+  .list-item {
+    margin: 10px 0 10px 20px;
+  }
+  .arrow {
+    margin-right: 2%;
+  }
+  section> ul,
+  section> ol,
+  section> p {
+    display: none;
+    overflow: hidden;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+    border-left: var(--border);
+    border-top: none;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+  .sidebar-title {
+    margin: 5px 0 0;
+    padding: 5px;
+  }
+  .contacts-link {
+    font-size: 16px;
+  }
+
+  .sidebar-contacts-list-item {
+    width: 16px;
+  }
+}
+.active {
+  display: block;
+  height: auto;
+  overflow: visible;
+}
