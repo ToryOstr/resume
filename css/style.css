@@ -4,7 +4,7 @@
   --accent-light-color: #c4bd97;
   --content-sharing: 2px dotted rgb(74, 69, 42);
   --white-accent: #ffffff;
-} 
+}
 html,
 body {
   height: 100%;
@@ -88,6 +88,9 @@ body {
 .sidebar-li-text-circle {
   color: var(--accent-dark-color);
 }
+header {
+  display: flex;
+}
 
 h1 {
   font-size: 36px;
@@ -122,7 +125,6 @@ h1 {
   list-style-type: decimal;
   margin: 10px 25px 20px;
 }
-
 .project-tech {
   height: 1px;
   overflow: hidden;
@@ -130,11 +132,15 @@ h1 {
   list-style-type: disc;
   color: var(--accent-dark-color);
 }
+
 .tech-list {
   margin: 5px 0;
 }
 .project-list-links {
   color: var(--accent-dark-color);
+}
+.links-qr {
+  display: none;
 }
 .arrow {
   width: 16px;
@@ -176,14 +182,17 @@ h1 {
   margin: 10px 0;
 }
 .print {
-  float: bottom;
   width: 40px;
-  height: auto;
+  height: 40px;
+  padding: 0 0 3px 0;
+  margin-left: auto;
   background-color: var(--white-accent);
   border: var(--border);
   border-radius: 5px;
 }
+
 .print img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -219,6 +228,10 @@ h1 {
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
     transition: 0.3s;
+  }
+  .sidebar-title.click::after {
+    border-top: none;
+    border-bottom: 16px solid var(--accent-light-color);
   }
 
   .contacts-list {
@@ -262,7 +275,7 @@ h1 {
   .arrow {
     margin-right: 2%;
   }
-  .section-title{
+  .section-title {
     position: relative;
   }
 
@@ -280,9 +293,13 @@ h1 {
     transition: 0.3s;
   }
 
+  .section-title.click::after{
+        border-top: none;
+    border-bottom: 16px solid var(--accent-light-color);
+  }
+
   section > ul,
-  section > ol,
-  section> .text-content {
+  section > ol {
     display: none;
     overflow: hidden;
     margin: 0;
@@ -316,6 +333,191 @@ h1 {
 
   .sidebar-contacts-list-item {
     width: 16px;
+  }
+}
+@media print {
+  html,
+  body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
+    font-weight: 400;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    min-height: 100%;
+    flex: 1 1 auto;
+    margin: 0;
+    background-color: var(--white-accent);
+    box-shadow: 8px 8px 12px rgba(24, 16, 16, 0.25);
+  }
+
+  .main-content {
+    width: 65%;
+    padding: 40px;
+    border-top: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+  }
+
+  .sidebar {
+    width: 35%;
+    padding: 20px 15px;
+    border: var(--border);
+    background-color: var(--accent-light-color);
+    color: var(--accent-dark-color);
+  }
+
+  .user-photo {
+    width: 100%;
+    height: auto;
+  }
+  .sidebar-title {
+    margin: 10px 0 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: var(--accent-dark-color);
+    border-radius: 5px;
+    color: var(--white-accent);
+  }
+
+  .contacts-link {
+    font-size: 18px;
+    color: var(--accent-dark-color);
+  }
+  .contacts-list {
+    margin: 5px;
+  }
+
+  .sidebar-list {
+    margin: 0 25px;
+    list-style: disc;
+    height: auto;
+  }
+
+  .sidebar-list-item {
+    color: var(--white-accent);
+    margin: 5px 0;
+  }
+
+  .sidebar-contacts-list-item {
+    display: inline-block;
+    width: 18px;
+    margin: 0px 5px 0 0;
+  }
+
+  .sidebar-li-text {
+    display: inline-block;
+    width: 70%;
+    font-size: 18px;
+    margin: 0px 5px;
+    color: var(--accent-dark-color);
+  }
+  .sidebar-li-text-circle {
+    color: var(--accent-dark-color);
+  }
+  header {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent-light-color);
+    margin: 0;
+  }
+
+  .position {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent-dark-color);
+    margin: 15px 0;
+  }
+
+  .address,
+  .date-of-birth {
+    margin: 0 0 5px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    color: var(--accent-dark-color);
+    padding: 5px 0;
+    margin: 15px 0 0;
+  }
+
+  .list-item {
+    list-style-type: decimal;
+    margin: 10px 25px 20px;
+  }
+
+  .project-tech {
+    height: auto;
+    margin: 5px 15px;
+    list-style-type: disc;
+    color: var(--accent-dark-color);
+  }
+
+  .tech-list {
+    margin: 5px 0;
+  }
+  .project-list-links {
+    color: var(--accent-dark-color);
+  }
+  .links-qr {
+    display: block;
+    float: right;
+    height: 70px;
+    width: auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .sidebar-title::after,
+  .section-title::after,
+  .print,
+  .print img,
+  .arrow {
+    display: none;
+  }
+  .work-experiense {
+    margin-top: 70px;
+  }
+  .company-title {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent-light-color);
+  }
+
+  .company-year {
+    margin: 10px 0;
+    color: var(--accent-light-color);
+  }
+
+  .content-sharing {
+    border-top: var(--content-sharing);
+  }
+
+  .dots {
+    color: var(--accent-light-color);
+  }
+
+  .text-content {
+    margin: 10px 0;
+  }
+  .contacts-list,
+  section > ul,
+  section > ol {
+    display: block;
+    height: auto;
+    overflow: visible;
   }
 }
 .active {
