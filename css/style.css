@@ -189,6 +189,14 @@ h1 {
   background-color: var(--white-accent);
   border: var(--border);
   border-radius: 5px;
+  transition: 0.3s;
+}
+.print:hover {
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px var(--accent-light-color),
+  0px 0px 8px var(--accent-light-color),
+  0px 0px 12px var(--accent-light-color);
 }
 
 .print img {
