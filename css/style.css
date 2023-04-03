@@ -1,12 +1,13 @@
 :root {
-  --border: 1px solid #4a452a;
   --accent-dark-color: #4a452a;
+  --border: 1px solid var(--accent-dark-color);
   --accent-light-color: #c4bd97;
   --content-sharing: 2px dotted rgb(74, 69, 42);
   --white-accent: #ffffff;
-}
-
+} 
+html,
 body {
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
   background-color: #fafafa;
   font-weight: 400;
@@ -16,6 +17,8 @@ body {
   display: flex;
   flex-direction: row;
   width: 1000px;
+  min-height: 100%;
+  flex: 1 1 auto;
   margin: 40px auto;
   background-color: var(--white-accent);
   box-shadow: 8px 8px 12px rgba(24, 16, 16, 0.25);
@@ -172,7 +175,18 @@ h1 {
 .text-content {
   margin: 10px 0;
 }
-
+.print {
+  float: bottom;
+  width: 40px;
+  height: auto;
+  background-color: var(--white-accent);
+  border: var(--border);
+  border-radius: 5px;
+}
+.print img {
+  width: 100%;
+  height: auto;
+}
 @media (max-width: 768px) {
   .wrapper {
     width: 100%;
@@ -187,9 +201,26 @@ h1 {
     padding: 10px;
   }
   .sidebar-title {
+    position: relative;
     margin: 5px 0 0;
     padding: 5px;
   }
+
+  .sidebar-title::after {
+    position: absolute;
+    display: block;
+    top: 5px;
+    right: 2%;
+    content: '';
+    float: right;
+
+    border-top: 16px solid var(--accent-light-color);
+    border-bottom: none;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    transition: 0.3s;
+  }
+
   .contacts-list {
     margin: 0 5px;
   }
@@ -216,7 +247,6 @@ h1 {
     margin: 0;
   }
 
-
   h1 {
     font-size: 28px;
   }
@@ -232,9 +262,27 @@ h1 {
   .arrow {
     margin-right: 2%;
   }
-  section> ul,
-  section> ol,
-  section> p {
+  .section-title{
+    position: relative;
+  }
+
+  .section-title::after {
+    position: absolute;
+    display: block;
+    top: 5px;
+    right: 2%;
+    content: '';
+    float: right;
+    border-top: 16px solid var(--accent-light-color);
+    border-bottom: none;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    transition: 0.3s;
+  }
+
+  section > ul,
+  section > ol,
+  section> .text-content {
     display: none;
     overflow: hidden;
     margin: 0;
