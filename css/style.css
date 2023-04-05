@@ -154,7 +154,9 @@ h1 {
   border-right: 9px solid transparent;
   transition: 0.3s;
 }
-
+.arrow:hover{
+  cursor: pointer;
+}
 .arrow-rotate {
   rotate: 180deg;
 }
