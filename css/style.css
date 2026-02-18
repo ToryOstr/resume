@@ -139,9 +139,6 @@ h1 {
 .project-list-links {
   color: var(--accent-dark-color);
 }
-.links-qr {
-  display: none;
-}
 .arrow {
   width: 16px;
   height: 16px;
@@ -479,14 +476,6 @@ h1 {
   }
   .project-list-links {
     color: var(--accent-dark-color);
-  }
-  .links-qr {
-    display: block;
-    float: right;
-    height: 70px;
-    width: auto;
-    position: relative;
-    z-index: 2;
   }
 
   .sidebar-title::after,
