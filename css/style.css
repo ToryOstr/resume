@@ -1,10 +1,19 @@
-html, body {
+:root {
+  --primary-color: rgb(41, 24, 0);
+  --secondary-color: rgb(130, 103, 77);
+  --accent-text-color: rgb(225, 215, 215);
+  --text-color: rgb(51, 51, 51);
+  --link-color: rgb(85, 54, 0);
+  --link-hover-color: rgb(167, 103, 34);
+}
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   font-size: 16px;
 }
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: row-reverse;
   width: 80%;
@@ -16,10 +25,15 @@ html, body {
   border-left: 1px solid #ccc;
   padding: 0 40px;
 }
-.sidebar-title {
+.sidebar-title,
+.section-title {
+  width: 100%;
   font-size: 22px;
+  font-weight: bold;
   margin-top: 10px;
-  color: brown;
+  padding: 5px 10px;
+  color: var(--accent-text-color);
+  background-color: var(--secondary-color);
 }
 .contacts-list {
   list-style: none;
@@ -27,9 +41,8 @@ html, body {
   flex-direction: column;
 }
 .contacts-link {
-  margin: 5px 0;
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   display: inline-flex;
 }
 .contacts-link img {
@@ -38,16 +51,63 @@ html, body {
   margin-right: 10px;
 }
 .contacts-link:hover {
-  color: green;
+  color: var(--link-hover-color);
 }
-.language_level{
+.language_level {
   padding-left: 10px;
 }
 .sidebar-list {
   margin-top: 10px;
 }
-.sidebar-tech-skills > h4 {
+.sidebar-list-item {
+  margin: 5px 0;
+}
+h4 {
   margin-top: 20px;
   font-size: 18px;
-  color: brown;
+  font-weight: bold;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+.main-content {
+  padding: 0 40px;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.position {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.address {
+  font-size: 14px;
+  color: var(--text-color);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.implemented {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.implemented li {
+  margin: 5px 0;
+}
+.github-link {
+  text-decoration: none;
+  color: var(--accent-text-color);
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+.github-link:hover {
+  background-color: var(--link-hover-color);
+}
+.github-link-container {
+  margin-top: 20px;
 }
