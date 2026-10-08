@@ -111,3 +111,26 @@ h1 {
 .github-link-container {
   margin-top: 20px;
 }
+.experience-description {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.experience-description > li {
+  margin: 5px 0;
+}
+.course-title {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.course-year {
+  font-size: 18px;
+  color: var(--text-color);
+  font-style: italic;
+}
+.technologies {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
