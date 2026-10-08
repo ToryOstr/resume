@@ -134,3 +134,7 @@ h1 {
   color: var(--primary-color);
   margin-bottom: 10px;
 }
+.about-me p,
+.target p {
+  margin: 10px 0;
+}
