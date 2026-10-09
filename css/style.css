@@ -15,11 +15,19 @@ body {
 }
 .wrapper {
   display: flex;
-  flex-direction: row-reverse;
-  width: 80%;
+  flex-direction: column;
+  max-width: 1200px;
   margin: 0px auto;
   padding: 40px 0;
   box-sizing: border-box;
+}
+.header {
+  padding: 0 40px;
+}
+.content-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
 }
 .sidebar {
   border-left: 1px solid #ccc;
@@ -34,6 +42,12 @@ body {
   padding: 5px 10px;
   color: var(--accent-text-color);
   background-color: var(--secondary-color);
+}
+.sidebar-tech-skills h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 .contacts-list {
   list-style: none;
@@ -62,7 +76,8 @@ body {
 .sidebar-list-item {
   margin: 5px 0;
 }
-h4 {
+.projects > h4,
+.work-experience h4 {
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
@@ -119,12 +134,16 @@ h1 {
 .experience-description > li {
   margin: 5px 0;
 }
+.company-title,
 .course-title {
+  margin: 10px 0 5px;
+  font-size: 20px;
   font-weight: bold;
   color: var(--primary-color);
 }
 .course-year {
   font-size: 18px;
+  line-height: 1.2;
   color: var(--text-color);
   font-style: italic;
 }
@@ -137,4 +156,33 @@ h1 {
 .about-me p,
 .target p {
   margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .address {
+    margin-bottom: 0px;
+  }
+  .content-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    border-left: none;
+  }
+}
+@media (max-width: 568px) {
+  .sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sidebar-title,
+  .section-title {
+    font-size: 18px;
+  }
+  .projects > h4,
+  .work-experience h4 {
+    font-size: 16px;
+  }
 }
